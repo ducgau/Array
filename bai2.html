@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><script>
+    let num = window.prompt();
+    let Y = num.toString();
+    let result = [Y[0]];
+
+   for (let x=1; x<Y.length; x++) {
+       if (Y[x-1] % 2 === 0 && Y[x] % 2 === 0) {
+         result.push('-',Y[x]);
+       } else {
+           result.push(Y[x]);
+       }
+
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let A =prompt("nhap A");
+    let UPPER = 'ASDFGHJKLZXCVBNM';
+    let LOWER = 'asdfghjklzxcvbnm';
+    let ketqua = [];
+    for (let x=0; x<A.length; x++) {
+        if(UPPER.indexOf(A[x]) !== -1){
+            ketqua.push(A[x].toLowerCase());
+        }
+        else if(LOWER.indexOf(A[x]) !== -1){
+            ketqua.push(A[x].toUpperCase());
+        }
+        else {
+            ketqua.push(A[x]);
+        }
+    }
+    document.write(ketqua);
+</script>
+
+</body>
+</html>
